@@ -1,0 +1,32 @@
+.image-container {
+  position: relative;
+  width: 640px; /* 根据图片大小调整 */
+  height: 360px; /* 根据图片大小调整 */
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.image-container canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* 防止canvas阻挡图片点击事件 */
+  opacity: 0.7; /* 调整透明度，使弹幕显示在图片上 */
+}
+.reference {
+            margin-bottom: 20px;
+        }
+.reference .title {
+            font-weight: bold;
+        }
+.reference .authors,
+.reference .year,
+.reference .publisher {
+            font-style: italic;
+        }

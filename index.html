@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>光芒背后STEM女性的技术困境</title>
+<link rel="stylesheet" href="file:///C:\Users\wang\Desktop\SXHTML5\14179879\styles.css">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+ 
+ 
+<style>
+	svg {
+            border: 1px solid black;
+        }
+	canvas {
+            border: 1px solid #000;
+        }
+	p {
+            color: white;
+            font-size: 18px;
+        }
+    body {
+		background-color: #484850;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .paragraph {
+        margin: 20px 0;
+        opacity: 0;
+        transition: opacity 3s ease;
+    }
+	.flex-container {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中，如果需要的话 */
+        }
+	.highlight {
+            color: orange;
+            font-weight: bold;
+        }
+	.bar {
+            fill: steelblue;
+            transition: height 0.5s;
+        }
+    .info-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+	.button-container {
+            display: flex;
+            gap: 10px; /* 按钮之间的间距 */
+        }
+    .button-container button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+</style>
+ <script>
+        function showCustomInfoBox() {
+            var infoBox = document.getElementById("infoBox");
+            infoBox.style.display = "block";
+        }
+
+        function hideCustomInfoBox() {
+            var infoBox = document.getElementById("infoBox");
+            infoBox.style.display = "none";
+        }
+    </script>
+</head>
+<body>
+	   <div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\fengmian.png" alt="居中图片">
+    </div>
+	
+
+<div class="container">
+    <p class="paragraph">“STEM”是Science（科学）、Technology（技术）、Engineering（工程）和Mathematics（数学）的缩写，也是人们熟知的“理工科”。过去十年间，随着科技行业的飞速发展，STEM女性一度被视为职场逆袭的代表。相较于非STEM领域的女性，她们因掌握专业理工技能而具备更强的技术壁垒与不可替代性，这使得STEM成为部分女性在职业选择中的“安全牌”；同时从事STEM职业也享有更高的薪酬回报，若以财富作为阶层划分的标准，STEM则暗含助力阶层跃迁的可能，因此逐渐构建起技术充满光芒的“神话”。
+
+然而，目前经济下行期，一场“技术未能庇护STEM女性”的悖论正悄展开从高校专业选择，到就业时的隐性门槛、晋升时的玻璃天花板，再沦为育节点的停滞与返岗后的边缘化。经济下行与技术行业的其特点反而加剧了她们在职场中的“流失”，“安全牌”可能成为“安全陷阱”，渴望的阶层跃升也可能最终成为无奈的向下流动。
+
+技术的神话，正在一点点崩塌。而背后的困境，已随之而来。
+
+ <div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\girlfall.png" alt="居中图片">
+    </div>
+</p>
+
+ <span class="highlight">负重通行的窄门...... </span>
+ <pre>
+    <span style="background-color: yellow;">这段负重通行的窄门......</span>
+</pre>
+ <div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\负重前行.png" alt="居中图片">
+    </div>
+	
+   
+    <p class="paragraph">在培养职业专业能力的大学阶段，STEM专业对女性而言，往往是一道需要花费较大成本负重通行的窄门。</p>
+    <p class="paragraph">这是中南大学地球物理专业的大三学生小林正陷于这样的困境之中。她曾因兴趣选择了该专业，理应拥有多元出路：考编制入地震局、进入科研企业、继续深造等。然而现实往往是残忍的，有的路表明存在实则从未畅通。</p>
+	<p class="paragraph">地球物理专业设有野外测绘与高强度勘探的实践，因此学生们要背着沉重的仪器去野外，清早就进山采样，在烈日下计算刨土方量，夜晚扎营深山进行观测。小林对此并无怨言，因为她认为爬山和野外作业这样考验身体素质的任务并非女生所不能完成。但是当走出学校的实践课，面临找一份科研企业的实习时，小林接受到这样的用人反馈信息：“这岗位要爬山的哦”，“我们更看重男生”，“其实你可以试试文员岗”。不仅如此，毕业季来临之前，来自地勘单位“男性，能接受半年以上无人区作业”的招聘内容在学生之间转发。</p>
+    <p class="paragraph">通往科研企业的职业路径早在实习阶段划出了性别界限：许多用人单位因“背仪器爬山等体力活，女生无法胜任”而不招女生。这已是业内心照不宣却从未言明的“行业黑话”。</p>
+    <p class="paragraph">这样具有性别倾向的STEM专业有很强的信息不对称性。社交媒体上多是个性化和差异化的经验帖，真实且有效的信息供给不足，另外又无从事相关职业的亲戚可以打听询问，因此小林在当初选择专业时几乎不了解现实情况，学习之后才知晓内幕。</p>
+    <p class="paragraph">“历届毕业生中未有女生被企业招聘，企业不招女生也是所有人深谙但不会声张的“潜规则”，目前也没有听说毕业的学姐被企业招走。”</p>
+	<p class="paragraph">“其实我觉得如果（企业）不想要女生来工作，（高校）就不要开这个专业，也不要招女生，因为我们连选择的权利都没有，毕业就失业。”</p>
+    <p class="paragraph">“现在歧视是一个行业黑话，所有人都知道事实，但是学生们又不能（公开）说，导致越来越多后继的学生说我喜欢这个专业我来学，最后发现被骗了。我觉得企业应该直接说出来，而且不能限制性别，因为一定也有强壮的女生可以胜任，但是我仍然觉得现状有点难以改变。”这让小林对自己的专业发展前景丧失信心与期待。无独有偶，数据显示在本科毕业生中，工科女生对自己的专业认同度明显低于工科男生。</p>
+	
+	
+	<span style="background-color: yellow;">小林的采访......</span>
+
+<div class="image-container">
+  <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\小林采访pic.png" alt="Sample Image">
+  <canvas id="danmakuCanvas"></canvas>
+</div>
+<script src="file:///C:\Users\wang\Desktop\SXHTML5\14179879\script.js"></script>
+
+ <p class="paragraph">这高校的平等招生与企业的歧视招聘之间，看似是一道缝隙，实则是一条无法逾越的鸿沟。面对这种教育与就业无法衔接的断裂，地球物理专业的女学生往往只能做出两个方面的选择：一是围绕着升学深造，要么跨考其他理工科专业的研究生，拔高学历的同时换个“名片”进入就业市场；要么继续在本专业深造，硕博毕业后留校任教。二是围绕着转岗就业，要么考公考编，要么去其他领域工作。</p>
+    <p class="paragraph">在这种选择框架下，小林的内心迷茫又挣扎。有时感到很疲惫，她会和家里打电话，但是父母总说：“你一个女生，这专业能出来能干啥，还不如考个公务员。”小林听后深感绝望，“说真的，如果我毕业的最终目的是考公，那为什么我要选这个专业，选一个不这么难的，选一个稍微轻松一点的专业不好吗？起码不会每天推公式推得头都要秃了，然后啥都学，学一大堆东西，最后不知道自己用什么，简直迷茫的要死。”</p>
+	<p class="paragraph">最后，小林并没有选择考公，而是计划通过跨考电子信息方向的研究生，以求未来的保障性。而这样的选择绝非个案。数据显示，工科专业的女生比男生就业率低了15.3％，深造率高了12.6％。</p>
+    <p class="paragraph">然而，升学真的能提升她们的竞争力并帮助弥别差距吗？</p>
+	
+	<div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\升学转岗.png" alt="居中图片">
+    </div>
+	
+	<p class="paragraph">智联招聘数据显示，不同学历水平下，性别就业难度的差异显著：大专阶段差距最小，女性就业难度系数比男性低0.9%；硕士阶段差距最大，女性反而比男性高6.7%；到博士阶段才略微缩小为1.7%。这意味着，对STEM女性而言，即便她们继续攻读研究生学位，学历优势在性别结构性不平等面前，并不总是有效的缓冲器。学历优势只能相较于大专和本科学历的男性，但是对于同等学历的男性，就业竞争力甚至相对更弱。</p>
+
+
+<div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\柱形图.png" alt="居中图片">
+    </div>
+    
+	
+    <p class="paragraph">如果不执着于深造，直接就业又如何？麦可思数据显示，2020年工科女性毕业半年内就业最多的五大行业中，排名第一的是其专业相关度仅为32%却拥有76%就业满意度的领域。尽管教育行业薪资较低，涨薪幅度有限，但其晋升比例高达65%，领先多个热门行业。
+
+</p>
+    <p class="paragraph">这意味着，该阶段的STEM女性不是在负重前行，就是已经离开了这条路。</p>
+	
+	<div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\天花板.png" alt="居中图片">
+    </div>
+	<p class="paragraph">地板到天花板</p>
+	<p class="paragraph">负重走过教育的窄门，又要顶着逆流冲进就业的门槛。</p>
+    <p class="paragraph">STEM领域具有高度的技术壁垒，通常与生产转化和经济利益紧密相关，技术被视为驱动收入增长的关键因素。2021年至2024年，中国GDP同比分别增长8.6%、3.1%、5.2%和4.8%，2025年和2026年中国GDP的增长率预计分别为4.1%和4.0%，总体仍处于下滑状态。因此，STEM行业对女性的排斥并不仅源于文化层面的性别偏见，更在于其经济理性逻辑的驱动——性别作为一种经济成本效益的考量因素。女性被视作“额外但可被压缩的支出”，在资源有限、追求效率最大化的环境中被排除。这种倾向在工程这样对效率与投入产出比要求极高的领域尤为显著。</p>
+	<p class="paragraph">工程本身强调体力劳动和高度流动性，默认这是更适合男性的工作环境，因此男性相对女性是“性价比高的用工成本”，因此与工程领域的采掘/冶炼以及石油/石化成为男性求职者竞争优势最高的两个行业。</p>
+    <p class="paragraph">中国建筑集团江苏分部的工程项目经理小廉介绍说：“招聘的时候，看是女生就不要，或者说是我从你这儿招了十个二十个男生了，可能会附带招一个女生。”女性员工的出现，更多是为了满足性别比例的形式要求，这导致女性在工程领域的代表性严重不足。2022年的全国普查数据表示，女性工程技术人员占比31.7%。沈阳工业泵制造有限公司的赵琳说，目前她所在的项目只有她一位女性，男女比例为11:1。因代表性不足，女性的生理和生活需求被视为一种“额外成本”——企业需要为其单独设置卫生间、洗浴间及配套的生活工作设施，这使她们更易被贴上“特殊”或“麻烦”的标签。看似出于“岗位适配”的考量，实则是缺乏女性代表性和制度性保障，女性难以公平进入这一行业。</p>
+    <p class="paragraph">生育也在整体经济下行期成为STEM企业招聘女员工的重要考虑因素。因为技术驱动经济产出，所以技术项目要求技术岗人员连续地投入到项目工作中。生育显然是一种中断，不仅影响实际产出，还需要企业依法发放福利补助，用工压力倍增适婚得企业对于女员工的招聘尤为慎重。《女职工劳动保护特别规定》对女性产假和哺乳期权益的规定，在实际中转化为了企业的用工压力。</p>
+    
+	
+	<div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\饼形图.png" alt="居中图片">
+    </div>
+	<p class="paragraph">《女职工劳动保护特别规定》
+第七条　女职工生育享受98天产假，其中产前可以休假15天；难产的，增加产假15天；生育多胞胎的，每多生育1个婴儿，增加产假15天。女职工怀孕未满4个月流产的，享受15天产假；怀孕满4个月流产的，享受42天产假。
+
+第九条　对哺乳未满1周岁婴儿的女职工，用人单位不得延长劳动时间或者安排夜班劳动。用人单位应当在每天的劳动时间内为哺乳期女职工安排1小时哺乳时间；女职工生育多胞胎的，每多哺乳1个婴儿每天增加1小时哺乳时间。
+</p>
+	<p class="paragraph">这国内调查发现，女求职者在面试时被询问婚育等隐私问题的比例升至62.5%，而男性求职者只有三分之一被问及类似问题。自“三孩政策”实施以来，有25.39%的用人单位只招男性或男性优先，超过半数企业新招聘女性占比不足40%。与此同时，有企业承认曾因孕期或哺乳期解除女职工劳动合同。</p>
+    
+<button onclick="showCustomInfoBox()">产假天数</button>
+    <div id="infoBox" class="info-box">
+      <span style="background-color: yellow;">产假天数......</span>
+        <button onclick="hideCustomInfoBox()">关闭</button>
+    </div>
+<script src="file:///C:\Users\wang\Desktop\SXHTML5\14179879\script.js"></script>
+
+<p class="paragraph">在大连一家互联网“中厂”工作10年的老员工柒柒说：“如果你是在20岁底的话，就是27岁以上到30岁左右，即将面临试婚年龄的情况下，企业会有一些顾虑，相对来说更愿意招聘一个20出头的。像年龄25岁左右以内的到27岁以前的，要么就是要已经婚育的，（要么不要这个年龄段的）就是这个生育的过程 pass 掉。”</p>
+
+<span class="highlight">柒柒的采访...... </span>
+<div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\柒柒采访.png" alt="居中图片">
+    </div>	
+	
+    
+	<p class="paragraph">冲进就业岗位之后，对许多STEM女性来说，“就业—升职”的路径远不如想象中顺畅。女性和男性之间的本就存在着晋升的差异，智联调查数据显示：两性职场人共同认为“公司提供的晋升机会有限”是首要原因,56.2%女性选择此选项,高于去年的44.7%。值得关注的是,15.3%的受访女性选择了“处在婚育阶段,被动失去晋升”,而男性仅2.7%。10.2%的受访女性选择了“照顾家庭,职场精力分散”,大幅高于男性的6.1%,调研结果说明婚姻与家庭对女性职业发展的影响远远大于男性。而且在STEM领域女性领导的占比相对少，且女性难以晋升。</p>
+    <p class="paragraph">在工程单位工作的款款，今年刚过三十，已经多次与晋升项目管理层的机会擦肩而过。虽然晋升涉及多重指标，包括工作能力、绩效表现以及人际关系等，但在实际操作中，偏见与机会的不均往往暗中起着决定性作用。</p>
+    <p class="paragraph">单位中80%以上是男性领导，一些人习惯性地认为女性“敏感、自尊心强”、“抗压能力差”，在与业主谈判或追讨工程款时容易“抹不开面子”、“扛不住刁难”，还常被认为“思路不如男性开阔”、“不够圆滑老练”，不适合担任管理岗位。这些认识成为工程领域女性晋升通道中的隐性门槛，让不少女性被排除在候选人之外。</p>
+    <p class="paragraph">款款并非没有实力。四年来，她早已在高强度的项目工作中锤炼出出色的沟通协调能力与抗压素质。在最近一个季度，她所负责的项目更是交出了亮眼的业绩。然而，即便有能力、有成绩，她依然没能进入晋升名单。</p>
+	<p class="paragraph">这是因为她难以参与由男性主导的资源流动网络。单位中很多的项目信息与晋升机会，往往在非正式场合中传递。单位里的男员工和领导扎堆撺酒局和饭局，这时候往往是谈项目以及和领导拉关系的好机会。而款款并非不愿参与，只是这样的局很少有人主动邀请她。时间久了，项目资源、信息交流与晋升名额在男性群体中越发集中，而她纵使有出色的工作能力，在人情关系的社会资本积累方面还是没办法超越男性。</p>
+    <p class="paragraph">款款的困境，并非能力问题，而是职场文化中的性别障碍。而类似的问题在STEM领域普遍出现，STEM女性既要不停地证明自己优异的工作能力又要努力参与到公司单位中男性主导的社会网络。这重重障碍，让她们感到就像是被塞进了一个压缩空间，自己不停地试图打破并冲出困住她们的那块“天花板”，但是屡经尝试，成效甚微。</p>
+	
+<div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\智联柱形图.png" alt="居中图片">
+    </div>
+<span class="highlight">破裂的保护伞...... </span>
+<div class="flex-container">
+        <img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\保护伞.png" alt="居中图片">
+    </div>
+    <p class="paragraph">在婚育之后，技术对STEM女性的“向下流动”威胁开始显现。这种风险，并非源于其“技术能力不足”，而是生育与技术岗位的要求相悖。技术岗位具有连续、协作密集、替代性差、与效益直接挂钩的特点和要求，但是生育会使得技术岗的女性中断工作的连续性、退出项目组的协作、使得项目的经济产出有一定的波动，意味着生产休假的STEM女性已经与技术岗位不适配了。同时，STEM女性因休产假而退出的岗位会被快速交接填补，产假结束后的她们几乎无法再次回归，为保持生产效率，原岗位不会为她们腾退而项目组也不会单独给她们一个重新参与的岗位。</p>
+    <p class="paragraph">因此，生产后的STEM女性面临三种情况：转岗下调、不转岗但没有项目做、离职。不管哪种选择，她们的工资和福利待遇都全部下降，让STEM职业光芒四射的“高薪”特点，已离她们远去。</p>
+	<p class="paragraph">晴晴在一家从事科学教育研发的公司工作，她提到，公司内部的男女比例约为8:2。因为业务主要围绕科学课程展开，家长普遍更信任男性教师，男老师也更容易获得领导的认可和资源倾斜。她亲眼见到，一位原本负责面授科学课程的女老师因生育请假，岗位被一位男老师暂时接替。虽然领导曾口头承诺，等她回归后可以“适应一下再交接回来”，但现实是这个岗位一旦流动出去，就不可能再回来了。等她产假归来后，只能被安排转岗到课程审核部门。这个岗位不仅不再面向学生授课，失去了与家长和学生建立口碑的机会，也意味着她无法通过优秀的授课表现获取奖金，同时还面临基本工资的下调。</p>
+    <p class="paragraph">在科学教育领域，教师个人口碑决定了其影响力，也影响着奖金、资源分配乃至晋升机会。这位女老师辛苦积累的口碑和职场资本因此几乎一夜清零。晴晴感慨：“这和换了一份工作没什么区别。</p>
+    <p class="paragraph">更让女老师担忧的是，这种损失几乎没有补偿。即便公司发放了育儿津贴，也远不足以弥补岗位调整带来的长期影响。而且，公司内部还流传着一个“3年流失率”的潜规则：转岗后的员工往往在三年内流失或被裁。对这位女老师而言，刚从产假回来，便要立刻面对被边缘化的现实和失业的职业危机。</p>
+    <p class="paragraph">如果没有因生育被调岗，她们的职业发展依然是一滩死水。柒柒提到，她的一位技术岗女同事正经历着一种“隐形失业”的状态。这位同事年近40岁，在怀上二胎后选择按公司制度休产假，并将手头所有重要项目都做了规范的交接。原以为产假结束后可以顺利回归，重新投入熟悉的工作节奏，然而现实却让她始料未及，虽然她依然在原公司、名义上也未被调岗或裁员，但所有核心项目都已被其他人接手，新的项目分配也迟迟没有消息。</p>
+	<p class="paragraph">她每天照常打卡上下班，坐在工位上完成一些边角碎活，却始终无法接入公司真正的技术主线。看似还在职场体系内，实则被悄然“雪藏”，没人主动找她沟通新任务，参与会议也越来越少，她的存在感一点点被稀释，仿佛逐渐从团队中“隐身”。</p>
+    <p class="paragraph">她并不甘心。产假期间，她还在抽空学习新技术，希望回来后能迎头赶上。但现实中她的努力无人问津，甚至被贴上“家庭重心转移”和“精力难以保证”的标签。更无奈的是，她也不敢轻易辞职。40岁再择业，本就面临职场的年龄和性别顾虑，加上照顾两个孩子的家庭负担，她清楚地知道自己所处的是一个“不得不留，却无事可做”的尴尬位置。每天的上下班变得机械且沉重，既无法全身心投入工作，也难以真正抽身离开。</p>
+    <p class="paragraph">柒柒感慨地说：“她每天都很努力，坐在那里安安静静地撑着，但那是最熬人的。”这位同事的经历并非个例，而是许多STEM职场女性的缩影。在制度允许生育的表面平等之下，仍隐藏着资源剥夺、发展断裂和机会萎缩。</p>
+    <p class="paragraph">而原本在普通互联网公司做技术岗的小月，工作能力出色，加班赶项目也从不抱怨，工作发展相对有较大空间。但一切从生完孩子后开始悄然改变。孩子出生后，她陷入了几乎无法抽身的家庭漩涡，高度密集的家庭琐碎使她选择离职。接下来的日子，她白天要照顾婴儿，晚上哄睡之后还得赶紧洗衣、收拾屋子，第二天又要早起准备孩子的辅食。一切刚刚稳定一点，孩子上了小学，新的挑战又接踵而至：每天接送、辅导作业、安排兴趣班，哪个环节都不能落下。丈夫起早贪黑的上班赚钱，尽管她的父母偶尔能在经济上和育儿上给予些许帮衬，但基本上于事无补。</p>
+	<p class="paragraph">然后，孩子逐渐长大，生活开支也逐渐变大，最后因为家庭经济问题，她要重新就业。将近8年的工作空档期使得她只能找到一份文职岗位，处理一些基础的数据录入和行政事务。每月工资3000元，几乎看不到上涨的空间；朝九晚五，没加班没绩效；同事关系淡如水，也没有成长的机会。这样的职业，一眼望到头。
+曾经拼命学代码、通宵debug，想要在技术行业站稳脚跟的努力，在孩子出生之后仿佛一夜回到了解放前。如今的她，在家庭和工作的拉锯中找不到重新出发的支点，也早已不在想象回到过去那个岗位人生还会是怎样的光景。
+</p>
+<div class="flex-container">
+			<img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\非STEM.png" alt="居中图片">
+    </div>
+    <p class="paragraph">此类职业风险在非STEM领域并不突出。非STEM岗位多为文职性行政职能，与组织绩效关联度低，女性产后可较顺利复岗。而STEM行业项目周期紧迫、人力精简，技术岗位强调高度协作与人员绑定，使其对成员稳定性依赖显著增强。女性因婚育脱产期间，项目常已重组或转向，重返岗位面临高协调成本与适应壁垒。在“减员增效”导向下，企业倾向将其视作“低弹性”与“高不确定性”资源，优先被边缘化。由此，STEM女性并非因能力短板而被排斥，而是在高度依赖协作与连续性的组织结构中，成为风险管理逻辑下的“非理性负担”。</p>
+ 
+    <p class="paragraph">① 项目导向性强</p>
+	<p class="paragraph"> → 项目临时性 / 快速更替</p>
+    <p class="paragraph"> → 项目暂停 / 解散</p>
+    <p class="paragraph"> → 原岗位消失 / 职责转移</p>
+    <p class="paragraph"> → 结构性“岗位空心化”</p>
+	<p class="paragraph">② 协作依赖度高</p>
+    <p class="paragraph"> → 团队高耦合 / 高协同需求</p>
+    <p class="paragraph"> → 成员流动影响团队稳定性</p>
+    <p class="paragraph"> → 项目更迭导致人员重组</p>
+	<p class="paragraph"> → 回归者缺乏嵌入点 / 适配成本高</p>
+    <p class="paragraph"> → 被排除于协作网络之外（“回归无门”）</p>
+    <p class="paragraph">③ 成本优化逻辑主导</p>
+    <p class="paragraph"> → 企业追求“减员增效”</p>
+	<p class="paragraph"> → 长期离线视为“高不确定性资源”</p>
+    <p class="paragraph"> → 不参与关键节点 → 被认定为“非核心”</p>
+    <p class="paragraph"> → 被划归为“低弹性资源”</p>
+    <p class="paragraph"> → 优先边缘化 / 岗位剥离</p>
+	<p class="paragraph">结果</p>
+    <p class="paragraph"> → 女性因婚育脱产被系统性排斥</p>
+    <p class="paragraph"> → 非源于能力，而因组织逻辑下的结构性不适配</p>
+    <p class="paragraph"> → 再次强化“家庭责任-职业风险”绑定的性别机制</p>
+	
+	<span class="highlight">期待明天...... </span>
+	<div class="flex-container">
+			<img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\期待明天.png" alt="居中图片">
+    </div>
+	<p class="paragraph">尽管STEM女性在以项目为单位、协作强度高、成本控制严苛的技术组织中常被视为“高风险人力”或“低弹性资源”，但这并不意味着她们在职业道路上必然陷入边缘化的命运。</p>
+    <p class="paragraph">女性技术人的文化位置正在经历显著转变。一方面，全球范围内女性工程师、程序员、产品经理等群体的集结形成了日益壮大的技术性别共同体，如“Girls Who Code”“Women in Tech”“She Loves Tech”等组织，提供了资源共享、情感支持与职场导航的文化网络，使女性得以在男性主导的技术语境之外建立独立身份与认同空间。另一方面，人工智能、大数据、自动化等前沿领域所需的跨界融合能力（如数据+心理、算法+伦理、编程+沟通）正好契合女性在沟通、协调、同理心等“软技能”上的相对优势，使她们能在技术生产的“边缘环节”中重新获得话语权，甚至在科技治理与伦理制定中发挥关键作用。例如，在AI偏见审查、算法透明性倡议、数字健康与FemTech产品设计等领域，女性专业者正以独特的视角参与科技价值的重新构建。这不仅扩展了“技术”的内涵，也为STEM女性开辟了新的专业疆域。</p>
+    <p class="paragraph">同时，STEM女性的出路正呈现出“横向扩张、非线性成长”的特征。她们不再将自己局限于硬核技术岗位的单一路径，而是通过跨专业整合与角色流动，主动转向产品管理、科技传播、数据伦理、技术教育等复合型岗位，实现职业的再塑与延展。这种“技术+X”的跨界模型，使女性得以在时空弹性更大、身份转化成本更低的岗位上继续积累专业资本，重构职业叙事。尤其值得注意的是，一些女性将自身婚育经验转化为创业动机，进入如母婴科技（FemTech）、亲子编程、女性AI陪伴系统等新兴赛道，借由“生活经验的技术转译”实现身份转换与产业创新。</p>
+    <p class="paragraph">此外，国家政策与制度保障也在逐步回应技术劳动力性别结构失衡的问题。随着“提高女性科技人才比例”写入若干国家科技发展战略，以及地方政府对产后复岗、女性职业培训项目的财政扶持，一种更系统性的支持体系正逐渐浮现。这些政策虽非全面覆盖，却为结构性变革提供了关键支点，使个体的策略选择不再孤立无援。</p>
+	<div class="flex-container">
+			<img src="file:///C:/Users/wang/Desktop/TONG/6.9晚封面拆分/temp_pic_gallery\太阳光.png" alt="居中图片">
+    </div>
+	
+	<h3>参考文献</h3>
+    <div class="reference">
+        <div class="title">[1] 北京: 清华大学出版社, 2011.</div>
+        <div class="authors">张三</div>
+        <div class="year">2011</div>
+        <div class="publisher">清华大学出版社</div>
+    </div>
+    <div class="reference">
+        <div class="title">[2] computer applications[M]. Berlin, Germany: Springer, 2019.</div>
+        <div class="authors">Yu J G, Liu L, et al.</div>
+        <div class="year">2022</div>
+        <div class="publisher">Springer</div>
+    </div>
+	
+	<p class="paragraph">感谢指导老师</p>
+  
+
+    <!-- 可以添加更多段落 -->
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const paragraphs = document.querySelectorAll('.paragraph');
+    window.addEventListener('scroll', function() {
+        paragraphs.forEach(paragraph => {
+            const paragraphTop = paragraph.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (paragraphTop < windowHeight) {
+                paragraph.style.opacity = 1;
+            }
+        });
+    });
+});
+</script>
+</body>
+</html>
